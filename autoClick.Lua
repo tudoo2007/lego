@@ -6,4 +6,4 @@ while wait() do
 	tudoo.Bindable.Client.Button1Up:Fire()
 end
 end
-	tudoo.Bindable.Client.slowAutoClickerToggle:Fire(true)
+tudoo.Bindable.Client.slowAutoClickerToggle:Fire(true)
