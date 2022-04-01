@@ -1,4 +1,4 @@
-tudoo = game:service'ReplicatedStorage'
+local tudoo = game:service'ReplicatedStorage'
 
 while wait() do
 	if getgenv().Rebirth == true then
