@@ -6,10 +6,4 @@ while wait() do
 	tudoo.Bindable.Client.Button1Up:Fire()
 end
 end
-
-if getgenv().RegularAutoClick == true then
 	tudoo.Bindable.Client.slowAutoClickerToggle:Fire(true)
-if getgenv().RegularAutoClick == false then
-	tudoo.Bindable.Client.Slow.AutoClickerToggle:Fire(false)
-end
-end
