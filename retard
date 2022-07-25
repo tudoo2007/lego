@@ -1,0 +1,31 @@
+function tween(position)
+    Distance = (position.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+    game:GetService("TweenService"):Create(
+        game.Players.LocalPlayer.Character.HumanoidRootPart,
+        TweenInfo.new(Distance/80, Enum.EasingStyle.Linear),
+        {CFrame = position}
+    ):Play()
+end
+
+game:GetService("RunService").Stepped:Connect(function()
+
+    pcall(function()
+
+      for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
+
+            if v:IsA("Tool") then
+
+              
+                game:GetService("StarterGui"):SetCore("SendNotification", {Title = "found df", Text = v.Name})
+                tween(v.CFrame)
+
+            else
+
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "deo co fruit dau dmm", Text = "cut ra server khac"})
+
+            end
+
+        end
+
+    end)
+end)
