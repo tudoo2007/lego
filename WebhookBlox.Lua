@@ -12,8 +12,6 @@ local Beli = game.Players.LocalPlayer.Data.Beli.value
 local Race = game.Players.LocalPlayer.Data.Race.value
 local Fragment = game.Players.LocalPlayer.Data.Fragments.value
 
-local url =
-   "https://discordapp.com/api/webhooks/963673282438111272/QkXNYvG5-dAvTBAOJRcln6qUlgz7VC1hbbCz6ySJEiRlhA6Y44XiA5tfo_jfZXd7wnEJ"
 
 
 
